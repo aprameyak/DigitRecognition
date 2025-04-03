@@ -32,15 +32,3 @@ This project demonstrates a machine learning model built using TensorFlow and Ke
 ## Results
 
 - **Training vs. Testing Accuracy**: You might observe that the accuracy on the training dataset is higher than the testing dataset. This discrepancy is often due to **overfitting**, where the model performs well on training data but does not generalize as well to unseen test data.
-
-## Code Explanation
-
-### Loading the MNIST Dataset
-```python
-(dataset_train, dataset_test), dataset_info = tfds.load(
-    'mnist',
-    split=['train', 'test'],
-    shuffle_files=True,
-    as_supervised=True,
-    with_info=True,
-)
